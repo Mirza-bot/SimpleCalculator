@@ -48,10 +48,20 @@ body > div {
     background: linear-gradient(to bottom, #FF502B, #FCD217) 
 }
 
-.button {
+.buttons {
     border: 0.5px solid black;
     line-height: 100px;
     text-align: center;
     font-size: 25px;
     cursor: pointer;
+}
+
+.buttons:hover {
+    background: #FC2F17;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+#equal {
+    background: coral;
 }
