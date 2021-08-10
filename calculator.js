@@ -12,10 +12,15 @@ let buttonsList = document.querySelectorAll("button").forEach(x => {
                 let removed = display.innerText.slice(0, -1)
                 display.innerText = removed
                 break
+            case "×":
+                display.innerText= display.innerText + "*"
+                break
+            case "÷":
+                display.innerText= display.innerText + "/"
+                break    
             case "=":
                 try {
-                    let result = eval(display.innerText)
-                    display.innerText = result
+                    display.innerText = eval(display.innerText)
                 }
                 catch (e) {
                     display.innerText = "Invalid Input"
